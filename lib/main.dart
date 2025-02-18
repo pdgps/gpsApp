@@ -64,6 +64,7 @@ class _HomePageState extends State<HomePage> {
       int? gnssTimeMillis = await _platform.invokeMethod<int>('getGnssTime');
       
       print('Tiempo GNSS recibido: $gnssTimeMillis ms');
+      print('Funcionando');  //cambio para primer pullrequest
 
       setState(() {
         lat = position.latitude;
@@ -156,3 +157,4 @@ class _HomePageState extends State<HomePage> {
     );
    }
 }
+
